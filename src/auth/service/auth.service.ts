@@ -6,8 +6,8 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root',
 })
 export class AuthService {
-  static loggedinstat: boolean ;
-  loggedinstat : boolean ;
+  static loggedinstat: boolean = false ;
+  loggedinstat : boolean = false;
   // getAuthToken() {
   //   throw new Error("Method not implemented.");
   // }
@@ -23,7 +23,7 @@ export class AuthService {
     return 0;
   if (parts.length == 2) {
     return parts.pop().split(";").shift();
-  }
+  } 
 
 }
 

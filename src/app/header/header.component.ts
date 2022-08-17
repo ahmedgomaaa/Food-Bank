@@ -21,7 +21,7 @@ export class HeaderComponent implements OnInit {
     var x = document.getElementById("login");
     
 
-    if (this.loggedinstat == true) {
+    if (AuthService.loggedinstat == true) {
       x.style.color = "blue";
     } else
     //  if( AuthService.loggedinstat === false)
