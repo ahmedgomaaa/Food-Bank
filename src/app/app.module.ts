@@ -7,9 +7,10 @@ import { AppComponent } from './app.component';
 import {TabMenuModule} from 'primeng/tabmenu';
 import {MenuItem} from 'primeng/api';
 import { MenuModule } from 'primeng/menu';
-
-
-
+// 
+import { StoreModule } from '@ngrx/store';
+import { isLoggedInReducer } from './isLoggedIn.reducer';
+// 
 import { ButtonModule } from 'primeng/button';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -57,6 +58,9 @@ import { AuthService } from 'src/auth/service/auth.service';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    // 
+    StoreModule.forRoot({ isLoggedIn: isLoggedInReducer }),
+    //  
     TabMenuModule,
     AuthModule,
     HttpClientModule,

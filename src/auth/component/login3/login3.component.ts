@@ -7,6 +7,11 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { } from '@angular/common';
 import { setCookie } from 'src/auth/service/cookies.service';
 
+// 
+import { Store, select } from '@ngrx/store';
+import { Observable } from 'rxjs';
+import { Login, Logout } from '../../../app/isLoggedIn.actions';
+// 
 
 @Component({
   selector: 'app-login3',
@@ -15,6 +20,7 @@ import { setCookie } from 'src/auth/service/cookies.service';
 })
 export class Login3Component implements OnInit {
   [x: string]: any;
+  isLoggedIn$: Observable<boolean>;
 
   // loginUser: any = {
   //   email: '',
@@ -27,12 +33,11 @@ export class Login3Component implements OnInit {
     private formBuilder: FormBuilder,
     private http: HttpClient,
     private router:Router,
-    private auth:AuthService
+    private auth:AuthService,
+    private store: Store<{ isLoggedIn: boolean }>
   ) {
-
-   }
-;
-
+    this.isLoggedIn$ = store.pipe(select('isLoggedIn'));
+  };
 
   ngOnInit(): void {
 
@@ -90,6 +95,11 @@ submit() : void {
 
         localStorage.setItem('token',res.token);
         AuthService.loggedinstat = true;
+        // 
+        this.store.dispatch(new Login());
+        console.log("calling store dispatch Login");
+
+        // 
        // setCookie("token", res.token);
 
 
