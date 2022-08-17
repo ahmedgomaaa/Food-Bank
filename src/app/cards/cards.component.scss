@@ -1,0 +1,60 @@
+main {
+    margin: 0;
+    padding: 5px;
+    background-color: lightgray;
+  }
+  
+  main > h1, p, .browser {
+    margin: 10px;
+    padding: 5px;
+  }
+  
+  .browser {
+    background: white;
+  }
+  
+  .browser > h2, p {
+    margin: 4px;
+    font-size: 90%;
+  }
+
+
+
+  .card{
+    margin: 20px;
+
+  }
+
+  .container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 50px 50px 50px 50px; 
+  }
+
+.card-text{
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+
+.center_content{
+  width:585px;
+  float:left;
+  padding:5px 10px;
+  }
+  .center_title_bar{
+  width:520px;
+  height:33px;
+  float:left;
+  padding:0 0 0 40px;
+  margin:0 0 0 12px;
+  _margin:0 0 0 6px;
+  line-height:33px;
+  font-size:12px;
+  color:#847676;
+  font-weight:bold;
+  }
+  

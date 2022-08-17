@@ -1,0 +1,41 @@
+
+
+
+<div class="container">
+ 
+
+   
+    
+ <!-- <div *ngFor="let product of product" class="card" style="width: 18rem;">
+    <img src="{{product.image}}" class="card-img-top" alt=" api  replaced image" 
+    style="height: fit-content;">
+    <div class="card-body">
+      <h5 class="card-title"> name : {{product.title}}</h5>
+      <p class="card-text"> api replaced paragraph</p>
+      <a href="#" class="btn btn-primary">Read Article</a>
+    </div>
+  </div>
+   -->
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+
+   <div class="col" *ngFor="let product of product" >
+    <div class="card h-100">
+      <img src="{{product.image}}" class="card-img-top" alt=" api  replaced image" width="100%" height="400px" src="{{product.image}}" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title>
+
+      <div class="card-body">
+        <h5 class="card-title">{{product.title}}</h5>
+        <p class="card-text">
+          <!-- {{product.cost}} -->
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, ipsa eos delectus quia ducimus blanditiis, iusto similique voluptate vero recusandae dignissimos ea! Neque, alias nostrum animi voluptas repudiandae natus. Placeat.
+        </p>
+        <a href="#" class="btn btn-primary dwnbts">Add To cart</a>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+
+</div>
+
