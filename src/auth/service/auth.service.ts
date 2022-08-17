@@ -26,6 +26,10 @@ export class AuthService {
   } 
 
 }
+logout() {
+  localStorage.removeItem('token');
+  this.loggedinstat = false;
+}
 
   loggedIn() {
     if (localStorage.getItem('token')) {

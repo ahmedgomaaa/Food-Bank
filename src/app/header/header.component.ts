@@ -30,6 +30,8 @@ export class HeaderComponent implements OnInit {
     loggedinstat : boolean = AuthService.loggedinstat;
   logout() {
     this.store.dispatch(new Logout());
+    // remove the cookie
+    this.auth.logout();
   }
    myFunction() {
 
