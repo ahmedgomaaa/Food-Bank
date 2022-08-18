@@ -1,0 +1,62 @@
+[
+  {
+    "id": 7,
+    "name": "Vegtable Pizza",
+    "price": 60.0,
+    "image": "https://i.imgur.com/oe83Oed.jpg",
+    "description": "Italian Pizza with vegtable ",
+    "boughtItemsCount": 0,
+    "category": "Pizza",
+    "addedToCart": false
+  },
+  {
+    "id": 8,
+    "name": "Chicken Burger",
+    "price": 55.0,
+    "image": "https://i.imgur.com/rmFPp4M.jpg",
+    "description": "Chicken sandwitch with mayonise",
+    "boughtItemsCount": 0,
+    "category": "Burger",
+    "addedToCart": false
+  },
+  {
+    "id": 9,
+    "name": "Beef Burger",
+    "price": 78.0,
+    "image": "https://i.imgur.com/uCNJp2x.jpg",
+    "description": "Beef sandwitch with bacon",
+    "boughtItemsCount": 0,
+    "category": "Burger",
+    "addedToCart": false
+  },
+  {
+    "id": 10,
+    "name": "Strawberry juice",
+    "price": 30.0,
+    "image": "https://i.imgur.com/W3t9qDa.jpg",
+    "description": "Strawberry juice sugar free",
+    "boughtItemsCount": 0,
+    "category": "Juice",
+    "addedToCart": false
+  },
+  {
+    "id": 12,
+    "name": "Red Orange juice",
+    "price": 35.0,
+    "image": "https://i.imgur.com/o5Myn6O.jpg",
+    "description": "orange juice",
+    "boughtItemsCount": 0,
+    "category": "Juice",
+    "addedToCart": false
+  },
+  {
+    "id": 14,
+    "name": "Salami pizza",
+    "price": 70.0,
+    "image": "https://i.imgur.com/OVNYP4f.jpg",
+    "description": "Salami pizza large",
+    "boughtItemsCount": 0,
+    "category": "Pizza",
+    "addedToCart": false
+  }
+]

@@ -19,7 +19,7 @@ import { AuthService } from './service/auth.service';
   declarations: [
     Login3Component,
     RegisterComponent,
-    CartComponent
+    // CartComponent
     
     
   ],
@@ -36,7 +36,7 @@ import { AuthService } from './service/auth.service';
   exports: [
     Login3Component,
     RegisterComponent,
-    CartComponent
+    // CartComponent
   ]
 
 })

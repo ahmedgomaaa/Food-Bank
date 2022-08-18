@@ -1,8 +1,11 @@
 
 
+  <h1 class="order">Order your meal Right now!</h1>
 
 <div class="container">
  
+
+
 
    
     
@@ -20,15 +23,16 @@
 
    <div class="col" *ngFor="let product of product" >
     <div class="card h-100">
-      <img src="{{product.image}}" class="card-img-top" alt=" api  replaced image" width="100%" height="400px" src="{{product.image}}" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title>
+      <img src="{{product.image}}" class="card-img-top" alt=" api  replaced image" width="100px" height="200px" src="{{product.image}}" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title>
 
       <div class="card-body">
-        <h5 class="card-title">{{product.title}}</h5>
+        <h5 class="card-title">{{product.name}}</h5>
         <p class="card-text">
-          <!-- {{product.cost}} -->
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, ipsa eos delectus quia ducimus blanditiis, iusto similique voluptate vero recusandae dignissimos ea! Neque, alias nostrum animi voluptas repudiandae natus. Placeat.
+          {{product.description}}
+
         </p>
-        <a href="#" class="btn btn-primary dwnbts">Add To cart</a>
+        <p class="price"> price : {{product.price}} le</p>
+        <a href="#" class="card-button" (click)="addToCart(product)" >Add To cart</a>
 
       </div>
     </div>

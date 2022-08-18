@@ -39,7 +39,8 @@ import {RatingModule} from 'primeng/rating';
 import {RippleModule} from 'primeng/ripple';
 import { AuthGuard } from 'src/auth/service/auth.guard';
 import { AuthService } from 'src/auth/service/auth.service';
-
+import { CurrencyPipe } from '@angular/common';
+import { CartService } from './cart/cart.service';
 
 
 @NgModule({
@@ -52,6 +53,7 @@ import { AuthService } from 'src/auth/service/auth.service';
     ContactUsComponent,
     FooterComponent,
     dviewComponent,
+    CartComponent
     
 
   ],
@@ -77,7 +79,7 @@ import { AuthService } from 'src/auth/service/auth.service';
     
     
   ],
-  providers: [AuthGuard],
+  providers: [AuthGuard , CurrencyPipe, CartService],
   bootstrap: [AppComponent,]
 })
 export class AppModule { 
