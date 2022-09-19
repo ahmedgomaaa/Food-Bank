@@ -41,6 +41,7 @@ import { AuthGuard } from 'src/auth/service/auth.guard';
 import { AuthService } from 'src/auth/service/auth.service';
 import { CurrencyPipe } from '@angular/common';
 import { CartService } from './cart/cart.service';
+import { NotfoundComponent } from './notfound/notfound.component';
 
 
 @NgModule({
@@ -53,7 +54,8 @@ import { CartService } from './cart/cart.service';
     ContactUsComponent,
     FooterComponent,
     dviewComponent,
-    CartComponent
+    CartComponent,
+    NotfoundComponent
     
 
   ],

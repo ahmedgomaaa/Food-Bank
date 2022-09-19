@@ -8,6 +8,8 @@ import { AuthModule } from '../auth/auth.module';
 import { dviewComponent } from './dview/dview.component';
 import { CartComponent } from './cart/cart.component';
 import { AuthGuard } from 'src/auth/service/auth.guard';
+import { NotfoundComponent } from './notfound/notfound.component';
+import { RegisterComponent } from 'src/auth/component/register/register.component';
 
 const routes: Routes = [
 
@@ -21,9 +23,13 @@ const routes: Routes = [
   { path : 'about-us', component : AboutUsComponent },
   { path : 'contact-us', component : ContactUsComponent },
   { path : 'login', component: Login3Component },
-  { path : 'cart', component: CartComponent , canActivate: [AuthGuard] },
+  {path : 'register', component: RegisterComponent},
+  { path : 'cart', component: CartComponent ,
+   canActivate: [AuthGuard]
+   },
   { path : 'dview', component: dviewComponent },
   { path : '', component : HomeComponent },
+  { path : '**', component : NotfoundComponent }
 
 ];
 

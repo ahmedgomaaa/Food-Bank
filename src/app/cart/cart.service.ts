@@ -19,7 +19,7 @@ export class CartService {
     }
     existingItems.push(addedItem);
     localStorage.setItem("cart_items", JSON.stringify(existingItems));
-    this.saveCart();
+    this.saveCart(); 
     
     // console.log(addedItem);
     

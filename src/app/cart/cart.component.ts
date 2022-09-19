@@ -59,37 +59,37 @@ export class CartComponent implements OnInit {
         addedToCart: false,
         qtyTotal: 0
 
-      }
-      // {
-      //   "id": 9,
-      //   "name": "Beef Burger",
-      //   "price": 78.0,
-      //   "image": "https://i.imgur.com/uCNJp2x.jpg",
-      //   "description": "Beef sandwitch with bacon",
-      //   "boughtItemsCount": 0,
-      //   "category": "Burger",
-      //   "addedToCart": false
-      // },
-      // {
-      //   "id": 10,
-      //   "name": "Strawberry juice",
-      //   "price": 30.0,
-      //   "image": "https://i.imgur.com/W3t9qDa.jpg",
-      //   "description": "Strawberry juice sugar free",
-      //   "boughtItemsCount": 0,
-      //   "category": "Juice",
-      //   "addedToCart": false
-      // },
-      // {
-      //   "id": 12,
-      //   "name": "Red Orange juice",
-      //   "price": 35.0,
-      //   "image": "https://i.imgur.com/o5Myn6O.jpg",
-      //   "description": "orange juice",
-      //   "boughtItemsCount": 0,
-      //   "category": "Juice",
-      //   "addedToCart": false
-      // },
+      },
+      {
+        id: 9,
+        name: "Beef Burger",
+        price: 78.0,
+        image: "https://i.imgur.com/uCNJp2x.jpg",
+        description: "Beef sandwitch with bacon",
+        boughtItemsCount: 0,
+        category: "Burger",
+        addedToCart: false
+      },
+      {
+        id: 10,
+        name: "Strawberry juice",
+        price: 30.0,
+        image: "https://i.imgur.com/W3t9qDa.jpg",
+        description: "Strawberry juice sugar free",
+        boughtItemsCount: 0,
+        category: "Juice",
+        addedToCart: false
+      },
+      {
+        id: 12,
+        name: "Red Orange juice",
+        price: 35.0,
+        image: "https://i.imgur.com/o5Myn6O.jpg",
+        description: "orange juice",
+        boughtItemsCount: 0,
+        category: "Juice",
+        addedToCart: false
+      },
       // {
       //   "id": 14,
       //   "name": "Salami pizza",

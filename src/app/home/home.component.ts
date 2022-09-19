@@ -7,7 +7,7 @@ import { CartComponent } from '../cart/cart.component';
 
 
 
-export class Product {
+export class Product {  
   constructor(
     public id: number,
     public name: string,
@@ -55,6 +55,7 @@ export class HomeComponent implements OnInit {
     // "User-Agent" : "PostmanRuntime/7.29.2" ,
     "Access-Control-Allow-Origin": "localhost:80",
     // "Cookie" : "JSESSIONID=E36E1CEDF1E2DE0A6870BF72ADE9670A"
+    "mode": "no-cors"
 
     
 
@@ -63,7 +64,11 @@ export class HomeComponent implements OnInit {
 
 
   getProduct(){
-    this.http.get<any>('http://localhost:4200/assets/data.json' ).subscribe(
+    this.http.get<any>(
+      
+      'http://localhost:4200/assets/data.json' 
+      // 'https://foodapplicationecomercial.herokuapp.com/Home/allFoodProducts' , {headers: this.heads}
+    ).subscribe(
       response => {
         console.log(response);
         this.product = response;
